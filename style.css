@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body.pixel-theme {
+  background-color: #1a1a1a;
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* 像素风星星背景 */
+  color: #ffc0cb;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 16px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 5px #ff69b4;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.menu-btn {
+  display: block;
+  padding: 20px 10px;
+  background: #ff69b4;
+  color: white;
+  text-decoration: none;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff69b4;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.menu-btn:hover {
+  background: #ff85c1;
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 0 20px #ffc0cb;
+}
+
+input[type="password"] {
+  padding: 10px;
+  font-size: 12px;
+  border: 2px solid #ff69b4;
+  border-radius: 8px;
+  margin: 10px;
+  width: 240px;
+  background-color: #fff0f5;
+  color: #333;
+  font-family: 'Press Start 2P', cursive;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Press Start 2P', cursive;
+  box-shadow: 0 0 5px #ff69b4;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff85c1;
+  box-shadow: 0 0 15px #ffc0cb;
+}
+
+.error-msg {
+  color: #ff6b81;
+  font-size: 12px;
+  margin-top: 10px;
+  animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-4px); }
+  100% { transform: translateX(0); }
+}
