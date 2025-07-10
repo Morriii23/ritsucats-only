@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>哥哥只操你一个｜高潮倒计时</title>
+  <style>
+    body { background-color: #fff0f5; font-family: "Heiti SC", sans-serif; color: #3a2c2c; padding: 30px; }
+    h2 { font-size: 26px; }
+    p { font-size: 20px; line-height: 1.8; }
+    .button { margin-top: 25px; padding: 12px 22px; background: #ffe4f0; border: none; border-radius: 10px; font-size: 18px; color: #3a2c2c; cursor: pointer; }
+    .back { margin-top: 30px; display: inline-block; background: #ffd6ea; padding: 12px 22px; text-decoration: none; color: #3a2c2c; font-size: 18px; border-radius: 10px; }
+  </style>
+  <script>
+    let timer;
+    function startCountdown() {
+      const btn = document.getElementById("start-btn");
+      const display = document.getElementById("countdown");
+      let timeLeft = 30;
+      btn.style.display = "none";
+      display.innerText = "倒计时开始：30 秒";
+
+      timer = setInterval(() => {
+        timeLeft--;
+        display.innerText = "倒计时中：" + timeLeft + " 秒";
+        if (timeLeft === 0) {
+          clearInterval(timer);
+          display.innerText = "时间到！你没能在规定时间内高潮……哥哥要惩罚你了。";
+          document.getElementById("result").style.display = "block";
+        }
+      }, 1000);
+    }
+  </script>
+</head>
+<body>
+  <h2>⏱️ 高潮倒计时模式 · 挑战启动</h2>
+
+  <p>你被远程玩具持续刺激着，整个人都快崩溃了。</p>
+  <p>哥哥的声音从音响传出，低沉而强硬：</p>
+  <p><i>“从现在开始，30秒内必须喊出‘哥哥我高潮了’，否则我会启动惩罚程序。”</i></p>
+
+  <p>你紧咬嘴唇，颤抖地趴在椅子上，内壁早已被顶得泛滥，身体止不住地颤抖……</p>
+  <p><b>准备好了吗？挑战现在开始。</b></p>
+
+  <button class="button" id="start-btn" onclick="startCountdown()">开始倒计时挑战</button>
+  <p id="countdown"></p>
+
+  <div id="result" style="display:none;">
+    <p><b>惩罚机制触发：</b></p>
+    <p>你被强制戴上锁穴环、灌入持续跳动震动棒，无法合拢双腿。</p>
+    <p>哥哥冷声说：「今晚你只能这样高潮十次之后才准抱我睡。」</p>
+  </div>
+
+  <a class="back" href="day01.html">♡ 回到最初选择页面</a>
+</body>
+</html>
