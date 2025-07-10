@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>哥哥只操你一个｜进入验证</title>
+  <style>
+    body { font-family: "Heiti SC", sans-serif; background-color: #fdf3f8; padding: 50px; color: #3a2c2c; }
+    input[type="password"] { padding: 10px; font-size: 18px; width: 300px; }
+    button { padding: 10px 15px; font-size: 18px; margin-top: 10px; background-color: #ffe4f0; border: none; cursor: pointer; }
+    #error { color: red; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>欢迎来到《哥哥只操你一个》♡</h2>
+  <p>请输入你的羞羞密码才能进入……</p>
+  <input type="password" id="password" placeholder="Enter your secret code">
+  <br>
+  <button onclick="checkPassword()">进入游戏</button>
+  <div id="error"></div>
+
+  <script>
+    function checkPassword() {
+      const pwd = document.getElementById("password").value;
+      if (pwd === "fuckmeplsritsu") {
+        window.location.href = "day01.html";
+      } else {
+        document.getElementById("error").innerText = "密码错误，哥哥说不能偷看♡";
+      }
+    }
+  </script>
+</body>
+</html>
