@@ -1,0 +1,74 @@
+
+body {
+    background-color: #1a1a1a;
+    color: #ffe8f4;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    padding: 30px;
+    background-image: url('./pixel_bg.png');
+    background-size: cover;
+}
+
+h1 {
+    font-size: 2em;
+    color: #ff7cbf;
+    text-shadow: 0 0 5px #ff7cbf;
+    margin-bottom: 40px;
+}
+
+.menu-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-button {
+    display: inline-block;
+    padding: 15px;
+    background-color: #ff7cbf;
+    color: #1a1a1a;
+    border-radius: 20px;
+    font-size: 1em;
+    text-decoration: none;
+    width: 130px;
+    height: 130px;
+    box-shadow: 0 0 10px #ff7cbf;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ffe8f4;
+}
+
+.menu-button .icon {
+    width: 48px;
+    height: 48px;
+}
+
+.pet {
+    font-size: 2em;
+    margin-top: 40px;
+    cursor: pointer;
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+#toggleMusic {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff7cbf;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff7cbf;
+}
