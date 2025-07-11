@@ -1,0 +1,83 @@
+
+body.menu-v3 {
+  background-color: #1a1a1a;
+  background-image: url('./bg_halo.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  font-family: 'Press Start 2P', monospace;
+  margin: 0;
+  padding: 20px 10px;
+  color: #ffe8f4;
+}
+
+.pixel-title {
+  text-align: center;
+  font-size: 1rem;
+  margin: 30px 0 10px;
+  color: #ff7cbf;
+  text-shadow: 0 0 4px #fff;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  justify-items: center;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ff7cbf;
+  padding: 15px;
+  border-radius: 20px;
+  width: 42vw;
+  max-width: 160px;
+  text-decoration: none;
+  color: #1a1a1a;
+  box-shadow: 0 0 12px #ffbde8;
+  transition: transform 0.2s ease;
+}
+
+.menu-btn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 18px #ffffff;
+}
+
+.menu-btn img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+}
+
+.menu-btn span {
+  font-size: 0.5rem;
+  text-align: center;
+  line-height: 1.2em;
+}
+
+.float-decor {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  animation: float 5s ease-in-out infinite;
+}
+
+.decor1 {
+  top: 15%;
+  left: 10%;
+}
+.decor2 {
+  bottom: 15%;
+  right: 10%;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
