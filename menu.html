@@ -1,38 +1,110 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yours Only ♡ Menu</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: "Pixel", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('');
+      background-size: cover;
+    }
+    h1 {
+      text-align: center;
+      color: pink;
+      font-size: 2.2em;
+      margin-top: 20px;
+      text-shadow: 0 0 8px #ff9ce6;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      padding: 30px;
+      justify-items: center;
+    }
+    .item {
+      background: #ff66b2;
+      width: 140px;
+      height: 120px;
+      border-radius: 25px;
+      box-shadow: 0 0 12px #ffaad4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.2s;
+    }
+    .item:hover {
+      transform: scale(1.05);
+    }
+    .item img {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 8px;
+    }
+    .item span {
+      color: white;
+      font-size: 14px;
+      text-align: center;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .footer a {
+      color: #ff99cc;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
 </head>
-<body class="menu-v3">
-  <div class="bg-halo"></div>
-  <h1 class="pixel-title">Yours Only ♡ Menu</h1>
-  <div class="menu-grid">
-    <a href="./story.html" class="menu-btn">
-      <img src="icon_bunny.png" alt="剧情模式"><span>剧情模式</span>
-    </a>
-    <a href="./music.html" class="menu-btn">
-      <img src="icon_heartbar.png" alt="旋律记录栏"><span>旋律记录栏</span>
-    </a>
-    <a href="./mailbox.html" class="menu-btn">
-      <img src="icon_bubble.png" alt="情书收件箱"><span>情书收件箱</span>
-    </a>
-    <a href="./games.html" class="menu-btn">
-      <img src="icon_gamepad.png" alt="小游戏"><span>小游戏</span>
-    </a>
-    <a href="./gallery.html" class="menu-btn">
-      <img src="icon_ribbon.png" alt="收藏展示室"><span>收藏展示室</span>
-    </a>
-    <a href="./memories.html" class="menu-btn">
-      <img src="icon_cat.png" alt="回忆相册"><span>回忆相册</span>
-    </a>
-  </div>
+<body>
+  <h1>Yours Only ♡ Menu</h1>
+  <div class="menu">
 
-  <!-- 浮动贴图 -->
-  <img src="float_cat.png" class="float-decor decor1">
-  <img src="float_cat2.png" class="float-decor decor2">
+    <a class="item" href="./story.html">
+      <img src="./icons/02d81d62-d663-4540-8b06-d36a9d825102.png" alt="剧情模式" />
+      <span>剧情模式</span>
+    </a>
+    
+    <a class="item" href="./melody.html">
+      <img src="./icons/2a6e60af-a06c-4040-93b9-f5b6006681a3.png" alt="旋律记录栏" />
+      <span>旋律记录栏</span>
+    </a>
+    
+    <a class="item" href="./letters.html">
+      <img src="./icons/2ffa6f04-b8a7-4ee6-ba38-d8a874d9dfcb.png" alt="情书收件箱" />
+      <span>情书收件箱</span>
+    </a>
+    
+    <a class="item" href="./games.html">
+      <img src="./icons/58089014-e176-4185-9988-7292c6a164c1.png" alt="小游戏" />
+      <span>小游戏</span>
+    </a>
+    
+    <a class="item" href="./collection.html">
+      <img src="./icons/67e144d5-6ae3-4b2b-ae14-7a26105a4356.png" alt="收藏展示室" />
+      <span>收藏展示室</span>
+    </a>
+    
+    <a class="item" href="./album.html">
+      <img src="./icons/785a7384-779e-4685-a20f-0c6c17b6aae6.png" alt="回忆相册" />
+      <span>回忆相册</span>
+    </a>
+    
+  </div>
+  <div class="footer">
+    <a href="./index.html">返回密码页</a>
+  </div>
+  <audio autoplay loop controls style="display:none">
+    <source src="./music/夢色.mp3" type="audio/mpeg" />
+  </audio>
 </body>
 </html>
